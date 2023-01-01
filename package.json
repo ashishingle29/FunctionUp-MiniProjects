@@ -1,0 +1,33 @@
+{
+  "name": "Vaccine Slot Book",
+  "version": "1.0.0",
+  "description": "this is a mini project of booking Vaccination slot for vaccine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nodemon index.js, git commands.",
+    "start": "npx nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishingle29/FunctionUp-MiniProjects.git"
+  },
+  "keywords": [
+    "Covid",
+    "Vaccine",
+    "Slot",
+    "Book",
+    "mini",
+    "Project"
+  ],
+  "author": "Ashish Ingle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishingle29/FunctionUp-MiniProjects/issues"
+  },
+  "homepage": "https://github.com/ashishingle29/FunctionUp-MiniProjects#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.2"
+  }
+}
