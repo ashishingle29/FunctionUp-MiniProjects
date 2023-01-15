@@ -1,36 +1,20 @@
-const mongoose = require('mongoose')
+const {Schema, model} = require("mongoose")
 
-const UserSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    age: {
-        type: Number,
-        required: true
-    },
-    phoneNumber: {
-        type: Number,
-        required: true
-    },
-    pinCode: {
-        type: Number,
-        required: true
-    },
-    aadhar: {
-        type: Number,
-        required: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
-    vaccinationStatus: {
-        type: String,
-        enum: ['none', 'First Dose Completed', 'All Completed'],
-        default: "none"
+const userSchema = new Schema(
+    {
+        Name : {type:String, required:true},
+        Mobile : {type:String, required:true, unique:true},
+        Age:{type:Number, required:true},
+        Password:{type:String, required:true},
+        Pincode:{type:Number, required:true},
+        Aadhar:{type:String, required:true, unique:true},
+        vaccineStatus:{
+            type:String,
+            default:"none"
+        },
+        resisteredTimeSlot :{type:String},
+        resisteredAt:{type:String}
     }
-})
+)
 
-
-module.exports = mongoose.model("UserData", UserSchema)
+module.exports = model("UserData", userSchema)
