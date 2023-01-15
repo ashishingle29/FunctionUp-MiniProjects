@@ -1,0 +1,23 @@
+{
+  "name": "student-marks",
+  "version": "1.0.0",
+  "description": "This is my Mini Project Repo and here i upload my short projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishingle29/FunctionUp-MiniProjects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishingle29/FunctionUp-MiniProjects/issues"
+  },
+  "homepage": "https://github.com/ashishingle29/FunctionUp-MiniProjects#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  }
+}
